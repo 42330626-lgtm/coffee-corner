@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    font-size: 1.4rem;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.burger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    background: #3498db;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Section */
+.section {
+    padding: 40px 0;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+    min-width: 180px;
+    border: 1px solid #ccc;
+}
+
+.card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* Menu grid */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.menu-item {
+    background: white;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.menu-item i {
+    font-size: 1.8rem;
+    color: #2c3e50;
+}
+
+.price {
+    font-weight: bold;
+    color: #e67e22;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+/* Contact page */
+.contact-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.contact-info ul {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.contact-info li {
+    margin: 10px 0;
+}
+
+.contact-info i {
+    width: 25px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+}
+
+.success {
+    color: green;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn:hover {
+    background: #1a252f;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background: #2c3e50;
+        padding: 10px 0;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .burger {
+        display: block;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .contact-wrapper {
+        flex-direction: column;
+    }
+}
