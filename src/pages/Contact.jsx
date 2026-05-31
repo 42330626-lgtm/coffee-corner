@@ -39,7 +39,7 @@ function Contact() {
           <ul>
             <li><i className="fas fa-map-marker-alt"></i> Hamra Street, Beirut, Lebanon</li>
             <li><i className="fas fa-phone-alt"></i> +961 78 746 783</li>
-            <li><i className="fas fa-envelope"></i> info@coffeecorner.com.lb</li>
+            <li><i className="fas fa-envelope"></i> 42330626@students.liu.edu.lb</li>
           </ul>
           <p>Open daily: 8am - 10pm (Beirut time)</p>
         </div>
